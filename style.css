@@ -115,7 +115,7 @@ section{
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .button1{
-        margin-top: 55vh;
+        margin-top: 50vh;
 
     }
     nav ul li a{
