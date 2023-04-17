@@ -101,6 +101,8 @@ body {
     .images {
         padding-left: 14%;
         padding-right: 14%;
+    }
+    .content {
         font-size: small;
         margin-top: 30px;
     }
