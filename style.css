@@ -1,129 +1,105 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-nav{
-    background: #88B04B; /* farba roka 2017 - Greenery */
-    height: 10vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
-nav ul{
-    float: right;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 10vh;
 
+.header {
+    background: #88B04B;
+    /* farba roka 2017 - Greenery */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
-nav ul li a{
+
+.header a {
     color: white;
-    font-size: 3vh;
-    padding: 7px 13px;
-    border-radius: 3px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-a.active,a.inactive:hover{
-    background: #009B77    ; /* farba roka 2013 - Emerald */
+
+a.active,
+a.inactive:hover {
+    background: #009B77;
+    /* farba roka 2013 - Emerald */
     transition: .5s;
 }
+
 /* green - concentration
 blue - productivity
 orange - mood lifter */
-p{
-    font-size: 3.5vh;
-}
-h1{
-    font-size: 5vh;
-}
-body{
+
+body {
     font-family: sans-serif;
-    margin-top: 16vh;
 }
-section{
-    display: flex;
-    align-items: flex-start;
+
+.content {
+    font-size: x-large;
+    margin-top: 50px;
     justify-content: center;
-    flex-direction: column;
-    position: absolute;
+}
+
+.content-text {
     padding-left: 14%;
     padding-right: 14%;
 }
-.button1{
-    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.images button {
+    margin: 3vw;
+    width: 24em;
+    height: 19em;
+    text-align: center;
+    position: relative;
+    border: none;
+    border: 3px solid #555;
+    border-radius: 5px;
+    transition-duration: .60s;
+}
+
+.button1 {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
     background: url(sqlhriste.jpg);
     background-size: cover;
 }
-.button1:hover{
-    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+
+.button1:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
     transform: scale(.95);
 }
-.button2{
-    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+
+.button2 {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
 }
-.button2:hover{
-    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+
+.button2:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
     transform: scale(.95);
 }
-.button3{
-    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+
+.button3 {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
 }
-.button3:hover{
-    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+
+.button3:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
     transform: scale(.95);
 }
-.button{
-    margin: 3vw;
-    margin-top: 350px;
-    width: 24vw;
-    height: 19vw;
-    left: 4vw;
-    right: 3vw;
-    text-align: center;
-    position:relative;
-    border: none;
-    border: 3px solid #555;
-    border-radius:5px;
-    transition-duration: .60s;
-}
-@media only screen and (max-width: 830px) {
-    /*For resizing on PC: */
-    .button {
-      width: 48vw;
-      height: 38vw;
-      margin: 3%;
-      margin-bottom: 20px;
-      left: 21vw;
-      right: 4vw;
-      position:relative;
-      float: center;
-      border: none;
-      border: 3px solid #555;
-      border-radius:5px;
-      transition-duration: .60s;
-    }
-    .button1{
-        margin-top: 70vh;
-    }
-  }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .button1{
-        margin-top: 40vh;
-
+    .images {
+        padding-left: 14%;
+        padding-right: 14%;
     }
-    nav ul li a{
-        font-size: 2vh;
-    }
-    p{
-        font-size: 2.5vh;
-    }
-    h1{
-        font-size: 3.5vh;
-    }
-  }
+}
