@@ -7,8 +7,7 @@
 }
 
 .header {
-    background: #88B04B;
-    /* farba roka 2017 - Greenery */
+    background: #f1f1f1;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -17,16 +16,19 @@
 }
 
 .header a {
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-a.active,
+a.active {
+    color: white;
+    background-color: #009B77;
+}
+
 a.inactive:hover {
-    background: #009B77;
-    /* farba roka 2013 - Emerald */
+    background: lightgray;
     transition: .5s;
 }
 
@@ -109,6 +111,7 @@ body {
 }
 
 .sidebar {
+    top: 0;
     margin: 0;
     padding: 0;
     width: 200px;
@@ -121,7 +124,7 @@ body {
 .sidebar a {
     display: block;
     color: black;
-    padding: 16px;
+    padding: 14px;
     text-decoration: none;
 }
 
@@ -141,7 +144,7 @@ div.lessons {
     height: 1000px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .sidebar {
         width: 100%;
         height: auto;
