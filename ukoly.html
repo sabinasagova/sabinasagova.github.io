@@ -33,7 +33,28 @@
 
       <div class="lessons">
         ..
+        <div class="table-container">
+        <button onclick="toggle()" class="button button6">Tabulky</button>
+        <div id="nazvytabuliek">
+          <button class="button button5">Název tabulky1</button>
+          <button class="button button5">Název tabulky2</button>
+          <button class="button button5">Název tabulky3</button>
+          <button class="button button5">Název tabulky4</button>
+          <button class="button button5">Název tabulky5</button>
+        </div>
+        </div>
       </div>
+
+      <script>
+        function toggle(){
+          var nazvytabuliek = document.getElementById("nazvytabuliek");
+          if (nazvytabuliek.style.display === "none"){
+            nazvytabuliek.style.display = "block";
+          } else {
+            nazvytabuliek.style.display = "none";
+          }
+        }
+      </script>
 
 
 </body>

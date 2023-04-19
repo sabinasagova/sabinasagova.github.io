@@ -7,6 +7,7 @@
 }
 
 .header {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background: #f1f1f1;
     width: 100%;
     overflow: hidden;
@@ -116,6 +117,7 @@ body {
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -153,10 +155,56 @@ div.lessons {
 
     .sidebar a {
         float: left;
+        margin-right: 6%;
     }
 
     div.lessons {
         margin-left: 0;
     }
-}
 
+
+}
+/* ok */
+
+.table-container {
+    top: 46px;
+    position:fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #009B77;
+  }
+  
+  
+  #nazvytabuliek {
+    display: none;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .button5{
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    text-align: left;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .button6{
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    text-align: left;
+    border: none;
+    color:white;
+    background-color: #009B77;
+    cursor: pointer;
+  }
+  #nazvytabuliek button:hover {
+    background-color: lightgray;
+  }
