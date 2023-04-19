@@ -176,7 +176,6 @@ div.lessons {
     background-color: #009B77;
   }
   
-  
   #nazvytabuliek {
     display: none;
     right: 0;
@@ -208,3 +207,9 @@ div.lessons {
   #nazvytabuliek button:hover {
     background-color: lightgray;
   }
+
+  @media screen and (max-width: 387px) {
+    .table-container{
+        top: 64px;
+    }
+    }
