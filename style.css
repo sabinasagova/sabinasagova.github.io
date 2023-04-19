@@ -167,13 +167,13 @@ div.lessons {
 /* ok */
 
 .table-container {
-    top: 46px;
-    position:fixed;
+    top: 0;
     right: 0;
+    position:fixed;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-color: #009B77;
+    background-color: transparent;
   }
   
   #nazvytabuliek {
@@ -200,16 +200,11 @@ div.lessons {
     padding: 10px 16px;
     text-align: left;
     border: none;
-    color:white;
-    background-color: #009B77;
+    color:black;
+    background-color: transparent;
     cursor: pointer;
   }
   #nazvytabuliek button:hover {
     background-color: lightgray;
   }
 
-  @media screen and (max-width: 387px) {
-    .table-container{
-        top: 68px;
-    }
-    }
