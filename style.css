@@ -1,210 +1,59 @@
 * {
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.header {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background: #f1f1f1;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.header a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-a.active {
-    color: white;
-    background-color: #009B77;
-}
-
-a.inactive:hover {
-    background: lightgray;
-    transition: .5s;
-}
-
-/* green - concentration
-blue - productivity
-orange - mood lifter */
-
 body {
-    font-family: sans-serif;
-}
-
-.content {
-    font-size: x-large;
-    margin-top: 50px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.content-text {
-    padding-left: 14%;
-    padding-right: 14%;
-}
-
-.images {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.images button {
-    margin: 3vw;
-    width: 24em;
-    height: 19em;
-    text-align: center;
-    position: relative;
-    border: none;
-    border: 3px solid #555;
-    border-radius: 5px;
-    transition-duration: .60s;
-}
-
-.button1 {
-    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
-    background: url(sqlhriste.jpg);
-    background-size: cover;
-}
-
-.button1:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
-    transform: scale(.95);
-}
-
-.button2 {
-    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
-}
-
-.button2:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
-    transform: scale(.95);
-}
-
-.button3 {
-    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
-}
-
-.button3:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
-    transform: scale(.95);
-}
-
-@media only screen and (max-width: 768px) {
-    .images {
-        padding-left: 14%;
-        padding-right: 14%;
-    }
-    .content {
-        font-size: medium;
-        margin-top: 30px;
-    }
-}
-
-.sidebar {
-    top: 0;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    position: fixed;
+.gif {
     height: 100%;
-    overflow: auto;
+    width: 100%;
 }
 
-.sidebar a {
-    display: block;
-    color: black;
-    padding: 14px;
-    text-decoration: none;
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #e94d58;
+    margin: 15px 0;
 }
 
-.sidebar a.active {
-    background-color: #009B77;
-    color: white;
-}
-
-.sidebar a:hover:not(.active) {
-    background-color: lightgray;
-    color: black;
-}
-
-div.lessons {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-}
-
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .sidebar a {
-        float: left;
-        margin-right: 6%;
-    }
-
-    div.lessons {
-        margin-left: 0;
-    }
-
-
-}
-/* ok */
-
-.table-container {
-    top: 0;
-    right: 0;
-    position:fixed;
+.btn-group {
+    width: 100%;
+    height: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: transparent;
-  }
-  
-  #nazvytabuliek {
-    display: none;
-    right: 0;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .button5{
-    display: block;
-    width: 100%;
-    padding: 10px 16px;
-    text-align: left;
-    border: none;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  .button6{
-    display: block;
-    width: 100%;
-    padding: 10px 16px;
-    text-align: left;
-    border: none;
-    color:black;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  #nazvytabuliek button:hover {
-    background-color: lightgray;
-  }
+    justify-content: center;
+    margin-top: 50px;
+}
 
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+    font-size: 1.2em;
+}
+
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #e94d58;
+}
+
+button:nth-child(2) {
+    margin-right: -200px;
+    background: white;
+    color: #e94d58;
+}
