@@ -7,7 +7,7 @@ const noBtn = document.querySelector(".no-btn");
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Super, teším sa!";
   gif.src =
-    "https://media1.tenor.com/m/6rf6vbTHL2IAAAAC/peach-and-goma-urka.gif";
+    "https://i.pinimg.com/originals/3e/cb/7c/3ecb7c6bc65751110c25499b88c378ef.gif";
 });
   noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
